@@ -6,9 +6,9 @@
 
     color: #0d0d0d;
     list-style: none;
-    text-decoration: none
+    text-decoration: none;
     color(#2e2e2e #2e2e2e #2e2e2e);
-    font-size: 16pt;
+    font-size: 12pt;
     font-family: roboto;
 
 }
@@ -16,34 +16,49 @@
 @font-face {
     font-family: roboto;
     src: url("/assets/fonts/Roboto-Regular.ttf");
-
     font-weight: 400;
-}
-
-h1, h2, h3, h4 {
-    text-align: left;
 }
 
 .tarjeta {
     border: solid 1px #2e2e2e;
     background-color: #F7A29E;
+
 }
 
 body {
     background-color: white;
     background-size: 100%;
-    background-position:right;
+    background-position: right;
     background-repeat: repeat-y;
 }
 
-header {
+.Header {
     background-color: #3B3F49;
 }
+
+.Header__nav {
+    padding: 4pt 16pt;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Header__nav__list {
+    display: flex;
+    gap: 30px;
+
+
+}
+
+.Header__nav__list a {
+    color: #f2f2f2;
+}
+
 
 button {
     background-color: #F7A29E;
     padding: 10px 50px;
-    border: solid 1px; 
+    border: solid 1px;
     border-radius: 10px;
     font-weight: bold;
 }
@@ -52,11 +67,71 @@ section {
     padding: 24pt 60px;
 }
 
-footer {
-    background-color: #3B3F49;
+.jumbotron {
+    display: flex;
+    align-items: center;
 }
 
-footer ul li {
-    color: #F7A29E;
+.jumbotron__informacion {
+    width: 50%;
+}
 
+.jumbotron__informacion h1 {
+    font-size: 55px;
+    margin-bottom: 10px;
+}
+
+.jumbotron__informacion button {
+    margin-top: 15px;
+}
+
+.jumbotron__img {
+    width: 50%;
+}
+
+
+.tarjetas {
+    display: grid;
+
+    grid-template-columns: repeat(auto-fit, minmax(324px, 1fr));
+    gap: 20pt;
+}
+
+.tarjeta {
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    height: 250px;
+}
+
+.tarjeta__info {
+    width: 50%;
+    padding: 10pt;
+}
+
+.tarjeta img {
+    width: 50%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.tarjeta button {
+    margin-top: 12px;
+}
+
+.footer {
+    color: #f2f2f2;
+    background-color: #3B3F49;
+    
+}
+
+.footer_list {
+    display: flex;
+    align-content: center;
+    align-items: center;
+
+}
+
+.footer ul li {
+    
 }

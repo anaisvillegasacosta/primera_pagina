@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,18 +12,16 @@
 
     <link rel="icon" href="/Frame.svg">
 </head>
+
 <body>
 
-    <header>
-        <nav>
-              
-            <img src="/assets/svg/facebook.svg" alt="facebook">
+    <header class="Header">
+        <nav class="Header__nav">
 
-            <ul>
+            <img src="/assets/svg/facebook.svg" alt="facebook">
+            <ul class="Header__nav__list">
                 <li>
-                    <a href="/">
-                        Inicio
-                    </a>
+                    <a href="/Inicio.html">Inicio</a>
                 <li>
                     <a href="/servicios.html">Servicios</a>
                 </li>
@@ -30,80 +29,87 @@
                     <a href="/sobre nosotros.html">Sobre nosotros</a>
                 </li>
             </ul>
-            
-            <a href="https://web.whatsapp.com/" target="_blank">
-                <button>
-                    Contáctanos
-                </button>
-            </a>
+            <button>
+                Contáctanos
+            </button>
         </nav>
     </header>
-
     <main>
-
-        <section>
-
-            <div>
+        <section class="jumbotron">
+            <div class="jumbotron__informacion">
                 <h1>Accesorios en tendencia según la moda coquette</h1>
-                <p>Coquette es una palabra en francés que significa coqueto y como tal, así marcan el estilo que se está haciendo viral en redes sociales como nueva tendencia. Esta ola de moda desplaza a lo “aesthetic”, que hace poco marcaba tendencia en la forma que la gente usaba ropa o plasmaba sus ideas en redes sociales.</p>
-                <img src="/assets/jpg/image 1.jpg" alt="imagen principal">
+                <p>Coquette es una palabra en francés que significa coqueto y como tal, así marcan el estilo que se está
+                    haciendo viral en redes sociales como nueva tendencia. Esta ola de moda desplaza a lo “aesthetic”,
+                    que hace poco marcaba tendencia en la forma que la gente usaba ropa o plasmaba sus ideas en redes
+                    sociales.</p>
                 <a href="https://es.wikipedia.org/wiki/Lazo">
-                <button>
-                Ver más
-               </button>                
-            </a>
+                    <button>
+                        Ver más
+                    </button>
+                </a>
             </div>
 
-            <img src="" alt="">
+            <div class="jumbotron__img">
+                <img src="/assets/jpg/image 1.jpg" alt="imagen principal">
+            </div>
         </section>
 
         <section>
             <h2>Accesorios para el cabello</h2>
 
             <!-- Representa la agrupación de tarjetas -->
-            <div>
+            <div class="tarjetas">
 
                 <!-- Tarjeta 1 Moñas -->
                 <div class="tarjeta">
 
-                    <div>
-                        <img src="/assets/jpg/image 2.jpg" alt="">
+                    <img src="/assets/jpg/image 2.jpg" alt="">
+                    <div class="tarjeta__info">
                         <h3>moñas</h3>
-                        <p>un lazo de cabello cubierta de tela que se usa para sujetar tipos de cabellos medianos a largos.</p>
-                       
-                    <a href="https://es.wikipedia.org/wiki/Mo%C3%B1a_(ropa)"> 
-                        <button>
-                            Comprar
-                        </button>
-                    </a>
-                       
+                        <p>un lazo de cabello cubierta de tela que se usa para sujetar tipos de cabellos medianos a
+                            largos.</p>
+
+                        <a href="https://es.wikipedia.org/wiki/Mo%C3%B1a_(ropa)">
+                            <button>
+                                Comprar
+                            </button>
+                        </a>
+
                     </div>
                 </div>
 
                 <!-- Tarjeta 2 -->
                 <div class="tarjeta">
                     <img src="/assets/jpg/image 2 (1).jpg" alt="imagen Colas">
-                    <h3>Colas</h3>
-                    <p>Las colas de cabello son un peinado muy común y fácil de hacer. Hay muchas variaciones de colas de cabello, como la cola alta, la cola baja, la cola de caballo, etc.</p>
-                <a href="https://es.wikipedia.org/wiki/Cola_de_caballo_(peinado)">
-                <button>
-                    Comprar
-                </button>
-            </a>    
-                
+                    <div class="tarjeta__info">
+                        <h3>Colas</h3>
+                        <p>Las colas de cabello son un peinado muy común y fácil de hacer. Hay muchas variaciones de
+                            colas
+                            de cabello, como la cola alta, la cola baja, la cola de caballo, etc.</p>
+                        <a href="https://es.wikipedia.org/wiki/Cola_de_caballo_(peinado)">
+                            <button>
+                                Comprar
+                            </button>
+                        </a>
+                    </div>
+
                 </div>
 
                 <!-- Tarjeta 3 -->
                 <div class="tarjeta">
                     <img src="/assets/jpg/image 2 (2).jpg" alt="ultima imagen">
-                    <h3>Cintillos</h3>
-                    <p>Cordoncillo de seda, labrado con flores a trechos y otras labores hechas de la misma materia, que se usaba en los sombreros para ceñir la copa.</p>
-                   <a href="https://revistavelvet.cl/cintillos-el-accesorio-que-volvio-o-nunca-se-fue/"> 
-                <button>
-                    Comprar
-                </button>
-            </a> 
-               
+                    <div class="tarjeta__info">
+                        <h3>Cintillos</h3>
+                        <p>Cordoncillo de seda, labrado con flores a trechos y otras labores hechas de la misma materia,
+                            que
+                            se usaba en los sombreros para ceñir la copa.</p>
+                        <a href="https://revistavelvet.cl/cintillos-el-accesorio-que-volvio-o-nunca-se-fue/">
+                            <button>
+                                Comprar
+                            </button>
+                        </a>
+                    </div>
+
                 </div>
 
             </div>
@@ -111,12 +117,12 @@
 
     </main>
 
-    <footer>
+    <footer class="footer">
         <nav>
             <img src="assets/png/image 3.png" alt="">
 
             <!-- representacion de contacto -->
-            <div>
+            <div class="footer list">
                 <img src="assets/svg/phone.svg" alt="">
                 <ul>
                     <li>+58 (412) 5050331</li>
@@ -148,4 +154,5 @@
         </nav>
     </footer>
 </body>
+
 </html>
