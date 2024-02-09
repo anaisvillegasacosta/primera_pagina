@@ -120,18 +120,25 @@ section {
 }
 
 .footer {
-    color: #f2f2f2;
     background-color: #3B3F49;
+    padding: 12pt 60px;
     
 }
 
-.footer_list {
+.footer nav {
+    display: flex;
+    align-items: center;
+    gap: 4pt;
+    justify-content: space-between;
+}
+.footer-list {
     display: flex;
     align-content: center;
     align-items: center;
-
+    gap: 16pt;
+    
 }
 
 .footer ul li {
-    
+    color: #f2f2f2;
 }
